@@ -1,0 +1,123 @@
+/* Reset & Base */
+body, html {
+  margin: 0;
+  height: 100%;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #fff;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+
+/* Hero Image */
+.img {
+  max-width: 250px;
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 40px auto 0;
+}
+
+/* Hero Text */
+.ptext {
+  font-family: Montserrat, sans-serif;
+  position: relative;
+  text-align: center;
+  margin-top: 5%;
+  width: 100%;
+  color: #fff; /* White text */
+}
+.ptext span:first-child {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+  display: block;
+}
+.ptext span:last-child {
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  display: block;
+}
+
+/* Hero Section */
+#hero {
+  background-color: #862ced;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding-top: 50px;
+  min-height: 100vh;
+  position: static;
+}
+
+/* Programming Section Heading */
+.impg { padding-top: 20px; margin-bottom: 30px; }
+
+/* Programming Section Icons (Vertical Column Layout) */
+.circle-wrapper {
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: 10px auto 0; 
+}
+
+/* The .circle-container now acts as a wrapper for the vertical column */
+.circle-container {
+  position: static;
+  width: auto;
+  height: auto;
+  transform: none; 
+  animation: none;
+  text-align: center;
+}
+
+.circle-container i {
+  display: block; 
+  position: static;
+  font-size: 3rem;
+  transform-origin: center;
+  transition: transform 0.3s ease;
+  transform: none !important; 
+  margin: 10px 0;
+}
+
+.circle-container i:hover {
+  transform: scale(1.3);
+}
+
+/* Color definitions */
+.circle-container i.fa-html5 { color:#e34c26; }    /* HTML5 Red-Orange */
+.circle-container i.fa-css3-alt { color:#264de4; } /* CSS3 Blue */
+.circle-container i.fa-js { color:#f0db4f; }       /* JavaScript Yellow */
+.circle-container i.fa-python { color:#306998; }   /* Python Blue (Original) */
+
+
+/* Sections */
+.block2 { padding: 50px; }
+.about-section { background-color: #862ced; color: white; margin:0; width:100%; }
+.experience-section { background-color: white; color:#333; margin:0; width:100%; }
+
+/* Hero GIF */
+.hero-gif { max-width:100%; margin:50px auto 0; display:block; height:auto; animation:bounce 2s infinite; }
+@keyframes bounce { 0%,100%{ transform:translateY(0); } 50%{ transform:translateY(-15px); } }
+
+/* Footer */
+footer { bottom:0; background-color:#79a3b1; width:100%; color:white; text-align:center; padding:20px 16px 100px; height:80px; margin-bottom:-30px; }
+
+/* Responsive Hero & Icons */
+@media(max-width:768px){
+  .ptext span:first-child{ font-size:32px; }
+  .ptext span:last-child{ font-size:18px; }
+  .hero-gif{ max-width:80%; margin:20px auto 0; }
+  .circle-wrapper { margin: 20px auto 0; }
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For A Better Future</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top nav-left">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Alexander Pilar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse flex-row-reverse nav-right" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hero">Hero</a></li>
+          <li class="nav-item">
+            <a class="btn btn-primary nav-link text-white" href="Alexander Resume-1.pdf" target="_blank">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="block d-flex flex-column justify-content-center align-items-center text-center">
+      <img class="img" src="my.photo.png" alt="photo">
+      <div class="ptext">
+        <span><b>Alexander Pilar</b></span>
+        <span>Programmer - Ethical Hacker</span>
+      </div>
+      <img class="hero-gif img-fluid" src="hacker-screen-mastermind.jpg" alt="Animated GIF">
+    </div>
+  </section>
+
+  <section id="projects" class="container-fluid bg-white">
+    <div class="row pad_top d-flex justify-content-between block2">
+
+      <div class="col-12 col-md-6 col-lg-4 text-center text-dark">
+        <img class="rounded-circle" src="pimg1.jpg" alt="Programming" width="200" height="200">
+        <h2 class="impg mt-3">Programming Languages</h2>
+        <div class="circle-wrapper mt-4">
+          <div class="icons-row-wrapper d-flex justify-content-center w-100"> 
+            
+            <div class="circle-container me-3"> 
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3-alt"></i>
+              <i class="fab fa-js"></i>
+            </div>
+            
+            <div class="circle-container">
+              <i class="fab fa-python"></i>
+            </div>
+
+          </div> 
+        </div>
+      </div>
+
+      <div class="col-lg-4 text-center text-dark">
+        <img class="rounded-circle" src="projects.jpg" alt="Projects" width="200" height="200">
+        <h2 class="impg mt-3">Projects</h2>
+        <p>I have worked on a variety of projects that reflect both my technical skills and creativity. My projects range from building responsive websites with HTML, CSS, and Bootstrap to developing interactive applications that focus on user-friendly design and functionality. I’ve also explored areas such as cybersecurity and ethical hacking, where I created practice environments to strengthen system security and understand vulnerabilities. Each project has helped me grow as a problem-solver, improve my coding abilities, and gain hands-on experience with real-world challenges.</p>
+        <a class="btn btn-secondary btn-github" href="https://github.com/1killperday">GitHub</a>
+      </div>
+
+      <div class="col-lg-4 text-center text-dark">
+        <img class="rounded-circle" src="hack.jpg" alt="Penetration Testing" width="200" height="200">
+        <h2 class="impg mt-3">Penetration Testing</h2>
+        <p>Penetration testing (pen testing) is a controlled, ethical process that simulates real-world attacks to evaluate the security of systems, networks, and applications. By identifying vulnerabilities before malicious actors do, pen testers help organizations prioritize fixes, strengthen defenses, and reduce risk. The work combines automated scanning with manual analysis and creative problem-solving to probe for misconfigurations, weak authentication, and other security gaps—always performed with permission, a clear scope, and responsible disclosure practices.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <div class="row align-items-center py-5">
+      <div class="col-lg-8 text-white">
+        <h2>About Me</h2>
+        <p>Motivated and dependable professional with experience in youth programs and customer service. Skilled in communication, teamwork, and problem-solving, with a proven ability to adapt quickly. Currently pursuing The Practical Network Penetration Tester (PNPT) certification while leveraging hands-on and educational experience to contribute effectively in diverse work environments.</p>
+      </div>
+      <div class="col-lg-4 text-center">
+        <img src="blue-cogs-gears-background-montage-connected-industrial-tone-31302616.jpg.webp" 
+             alt="About Me" class="img-fluid rounded mb-4">
+      </div>
+    </div>
+  </section>
+
+  <section class="experience-section">
+    <div class="container-fluid">
+      <div class="row align-items-center py-5">
+        <div class="col-lg-8">
+          <h2>Experience</h2>
+          <p>I have hands-on experience in programming, cybersecurity, and ethical hacking, with a strong focus on solving real-world problems through technology. Over the years, I’ve developed responsive websites, automated workflows with Python, and contributed to open-source projects that sharpened my technical and collaborative skills.</p>
+        </div>
+        <div class="col-lg-4 text-center">
+          <img src="images.jpeg" alt="Experience" class="img-fluid rounded mb-4">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="music-player py-5 text-center" style="background-color: #862ced;">
+    <h2 class="text-white">Listen to my Song!</h2>
+    <audio id="myAudio" controls>
+      <source src="Chloe.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <div class="mt-3 d-flex justify-content-center align-items-center gap-2">
+      <label for="volumeControl" class="form-label text-white mb-0">Volume:</label>
+      <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="1">
+    </div>
+  </section>
+
+  <footer class="bg-dark text-center text-white py-3">
+    &copy; 2019 <script>document.write(new Date().getFullYear());</script>, HireAlex.com - Alexander Pilar
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const audio = document.getElementById("myAudio");
+    const volumeControl = document.getElementById("volumeControl");
+    volumeControl.addEventListener("input", function () {
+      audio.volume = this.value;
+    });
+  </script>
+
+</body>
+</html>
